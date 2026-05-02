@@ -93,33 +93,10 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 ## ⚙️ Installation
 
 ```bash
-git clone 
+git clone https://github.com/AliBhatti21/Interpretable-MRI-Based-Biomarkers-for-Alzheimer-s-Disease-Classification.git
 cd 
 
 ```
-
----
-
-## ▶️ Usage
-
-### Run preprocessing
-
-```bash
-python preprocessing/run_pipeline.py
-```
-
-### Train model
-
-```bash
-python models/train.py
-```
-
-### Generate explanations
-
-```bash
-python interpretability/explain.py
-```
-
 ---
 
 ## 🔍 Reproducibility
@@ -144,12 +121,6 @@ python interpretability/explain.py
 ## 🤝 Contributions
 
 Contributions are welcome! Please open an issue or submit a pull request for improvements or discussions.
-
----
-
-## 📜 License
-
-[Choose a license, e.g., MIT License]
 
 ---
 
