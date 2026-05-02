@@ -114,8 +114,7 @@ cd
 **Conference/Journal:** Brain Informatics (Bari, Italy)
 **Year:** 2025
 
-📎 [Link to paper]
-📎 [Read the Paper](paper/paper.pdf)
+📎 Link to paper
 ---
 
 ## 🤝 Contributions
