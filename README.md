@@ -22,22 +22,22 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 * Modality: Structural MRI
 * Type: Cross-sectional data
 * Preprocessing includes:
-
-  * Skull stripping
-  * Normalization
-  * Registration
-  * ROI extraction
+  * FreeSurfer 6.0
+     * Skull stripping
+     * Normalization
+     * Registration
+     * ROI extraction
 
 > ⚠️ Note: Due to data privacy restrictions, the dataset is not included. Instructions for accessing publicly available datasets (e.g., ADNI) are provided below.
 
 ---
 
-## 🧠 Methodology Overview
+### 🧠 Methodology Overview
 
 <p align="center">
-  <img src="assets/diagram.png" alt="Pipeline Diagram" width="800"/>
+  <img src="workflow_diagram_3.png" alt="Pipeline Diagram" width="800"/>
 </p>
-## 1. Preprocessing Pipeline
+### 1. Preprocessing Pipeline
 
 * MRI standardization and alignment
 * Noise reduction and intensity normalization
@@ -50,24 +50,23 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 
 ### 3. Model Development
 
-* Machine Learning models (e.g., Random Forest, SVM)
-* Deep Learning architectures (CNN-based models)
+* Machine Learning models (e.g., Linear Regression, Logistic Regression)
 
 ### 4. Interpretability
 
-* Feature importance analysis
-* Model explanation techniques (e.g., SHAP, Grad-CAM)
+* Apparent Brain Features (ABF Models)
+* Model explanation techniques (e.g., ABF Score)
 * Identification of clinically relevant biomarkers
 
 ---
 
 ## 📊 Results
 
-* High classification performance across AD, MCI, and CN groups
+* High classification performance across AD and CN groups
 * Improved interpretability compared to black-box models
 * Identification of key brain regions associated with disease progression
 
-> Detailed metrics (Accuracy, AUC, F1-score) are available in the paper.
+> Detailed metrics (Accuracy, F1-score) are available in the paper.
 
 ---
 
@@ -77,10 +76,10 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 ├── data/                # Data handling scripts (no raw data included)
 ├── preprocessing/       # MRI preprocessing pipelines
 ├── models/              # ML/DL model implementations
-├── interpretability/    # Explainability methods (SHAP, Grad-CAM)
+├── interpretability/    # Explainability methods
 ├── results/             # Outputs, figures, and evaluation metrics
 ├── notebooks/           # Jupyter notebooks for experiments
-├── knime_workflows/     # KNIME pipelines (if applicable)
+├── knime_workflows/     # KNIME pipelines (for Ensemble method)
 └── README.md
 ```
 
@@ -90,9 +89,8 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+cd 
 
-pip install -r requirements.txt
 ```
 
 ---
@@ -130,12 +128,12 @@ python interpretability/explain.py
 ## 📄 Publication
 
 **Title:** Interpretable MRI-Based Biomarkers for Alzheimer’s Disease Classification
-**Authors:** [Your Name et al.]
-**Conference/Journal:** [Add here]
-**Year:** [Add here]
+**Authors:** H. M. Ali Bhatti et al.
+**Conference/Journal:** Brain Informatics (Bari, Italy)
+**Year:** 2025
 
 📎 [Link to paper]
-
+📎 [Read the Paper](paper/paper.pdf)
 ---
 
 ## 🤝 Contributions
@@ -152,13 +150,13 @@ Contributions are welcome! Please open an issue or submit a pull request for imp
 
 ## 📬 Contact
 
-* Name: [Your Name]
-* Email: [Your Email]
-* LinkedIn: [Your Profile]
+* Name: Muhammad Ali Bhatti
+* Email: Bhatti.hafizali@gmail.com
+* LinkedIn: www.linkedin.com/in/muhammad-ali-bhatti-281409314
 
 ---
 
 ## ⭐ Acknowledgements
 
-* KNIME (for workflow support and co-funded research)
+* ANVUR (PNRR scholarship funding source)
 * Open datasets and research community contributions
