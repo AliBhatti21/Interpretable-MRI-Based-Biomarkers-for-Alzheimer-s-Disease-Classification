@@ -3,7 +3,8 @@
 ## 📌 Overview
 
 This repository accompanies the research work titled **"Interpretable MRI-Based Biomarkers for Alzheimer’s Disease Classification"**.
-The project focuses on developing explainable machine learning approach to identify biomarkers from longitudinal MRI data for early detection and classification of Alzheimer's Disease (AD).
+The project focuses on developing explainable machine learning approach to identify biomarkers from cross-sectional MRI data for early detection and classification of Alzheimer's Disease (AD). We propose an ensemble of linear models for AD classification, combining re-
+gression and classification techniques for a novel methodology to identify potential biomarkers from MRI data, termed Apparent Brain Features (ABF). These biomarkers represent morphological brain regions automatically selected to optimise classification accuracy while preserving interpretability.
 
 Our goal is to bridge the gap between high-performing AI models and clinical interpretability by providing transparent and reproducible workflows.
 
@@ -18,7 +19,7 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 ---
 
 ## 🧬 Dataset
-
+* ADNI, AIBL, IXI, PPMI
 * Modality: Structural MRI
 * Type: Cross-sectional data
 * Preprocessing includes:
@@ -37,6 +38,7 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 <p align="center">
   <img src="workflow_diagram_3.png" alt="Pipeline Diagram" width="800"/>
 </p>
+
 ### 1. Preprocessing Pipeline
 
 * MRI standardization and alignment
