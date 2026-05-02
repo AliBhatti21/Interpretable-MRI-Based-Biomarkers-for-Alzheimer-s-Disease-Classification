@@ -23,13 +23,14 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 * Modality: Structural MRI
 * Type: Cross-sectional data
 * Preprocessing includes:
-  * FreeSurfer 6.0
-     * Skull stripping
-     * Normalization
-     * Registration
-     * ROI extraction
-
-> ⚠️ Note: Due to data privacy restrictions, the dataset is not included. Instructions for accessing publicly available datasets (e.g., ADNI) are provided below.
+  * FreeSurfer 6.0 Feature extraction
+      * Skull stripping
+      * Normalization
+      * Registration
+      * ROI extraction
+  
+    
+> ⚠️ Note: Due to data privacy restrictions, the dataset is not included. Instructions for accessing publicly available datasets (e.g., ADNI, AIBL, IXI, PPMI,) are provided below.
 
 ---
 
@@ -41,18 +42,22 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 
 ### 1. Preprocessing Pipeline
 
-* MRI standardization and alignment
-* Noise reduction and intensity normalization
-* Region-of-interest (ROI) extraction
+* Extreme Outliers detection
+* ICV Normalisation of volumes
+* Scaling features
 
-### 2. Feature Extraction
+### 2. Feature Selection
 
-* Structural biomarkers from MRI scans
-* Temporal features from longitudinal data
+* Mutual information (MI filter)
+* Biased Forward Feature Selection
 
 ### 3. Model Development
 
 * Machine Learning models (e.g., Linear Regression, Logistic Regression)
+
+### 4. Ensemble Method
+* Ensemble 1: Majority voting
+* Ensemble 2: Optimized method
 
 ### 4. Interpretability
 
@@ -76,7 +81,7 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 
 ```
 ├── data/                # Data handling scripts (no raw data included)
-├── preprocessing/       # MRI preprocessing pipelines
+├── preprocessing/       # MRI preprocessing pipelines scripts
 ├── results/             # Outputs, figures, and evaluation metrics
 ├── code/           # Jupyter notebooks for experiments
 ├── knime_workflows/     # KNIME pipelines (for Ensemble method)
@@ -88,7 +93,7 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone 
 cd 
 
 ```
