@@ -75,10 +75,8 @@ Our goal is to bridge the gap between high-performing AI models and clinical int
 ```
 ├── data/                # Data handling scripts (no raw data included)
 ├── preprocessing/       # MRI preprocessing pipelines
-├── models/              # ML/DL model implementations
-├── interpretability/    # Explainability methods
 ├── results/             # Outputs, figures, and evaluation metrics
-├── notebooks/           # Jupyter notebooks for experiments
+├── code/           # Jupyter notebooks for experiments
 ├── knime_workflows/     # KNIME pipelines (for Ensemble method)
 └── README.md
 ```
